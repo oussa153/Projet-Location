@@ -1,0 +1,72 @@
+<html>
+<head />
+<body>
+	<div id="users-sessions-new" class="popin js_popin  popin_thin">
+		<button name="button" type="button" title="Fermer" class="mfp-close"></button>
+		<form class="simple_form vertical_form" data-type="json" id="new_user"
+			action="/users/sign_in" accept-charset="UTF-8" data-remote="true"
+			method="post">
+			<input name="utf8" type="hidden" value="✓">
+			<div class="popin_header">Se connecter</div>
+			<hr class="popin_header_hr">
+			<div class="popin_content centered">
+				<a class="button button_facebook js_facebook_login "
+					data-omniauth-callback="/users/auth/facebook/callback"
+					data-redirect-path="/users/auth/facebook?callback=https%3A%2F%2Fwww.drivy.com%2F&amp;devise_action=sign_in"
+					data-action="sign_in" data-alert-attributes="{}"
+					href="#facebook_login"><div class="button_facebook_left"></div>
+					<span class="button_facebook_right">Connexion avec Facebook</span></a>
+			</div>
+			<div
+				class="popin_content popin_content_grey popin_content_with_choice_separator">
+				<div class="choice_separator">ou</div>
+
+				<div class="input_with_icon">
+					<div class="field_icon">
+						<svg width="24" height="24" viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg">
+							<!-- 24x24 -->
+<g fill-rule="evenodd" fill="none" stroke-width="1" stroke="none">
+<path
+								d="M21.9975216,6.42182031 C21.9975216,5.65086847 21.3536298,5 20.5593491,5 L3.43817244,5 C2.64270429,5 2,5.63657064 2,6.42182031 L2,6.69125369 L11.9987612,12 L21.9975216,6.69125369 L21.9975216,6.42182031 Z M22,17.57979 C22,18.3650397 21.3572161,19.0016103 20.5616493,19.0016103 L3.43835068,19.0016103 C2.64397153,19.0016103 2,18.3507418 2,17.57979 L2,8.73999023 L12,14 L22,8.73999023 L22,17.57979 Z"
+								fill="#b4bbc6"></path>
+</g>
+</svg>
+					</div>
+					<div class="field">
+						<input placeholder="Email" type="text" name="user[email]"
+							id="user_email">
+					</div>
+				</div>
+				<div class="input_with_icon top15">
+					<div class="field_icon">
+						<svg width="24" height="24" viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg">
+							<!-- 24x24 -->
+<g fill-rule="evenodd" fill="none" stroke-width="1" stroke="none">
+<path
+								d="M7,8 L7,7 C7,4.23857625 9.23857625,2 12,2 C14.7614237,2 17,4.23857625 17,7 L17,10.0000084 C18.105111,10.0031817 19,10.9039017 19,12.0085302 L19,18.9914698 C19,20.1007504 18.1029399,21 16.9941413,21 L7.00585866,21 C5.89805351,21 5,20.0980496 5,18.9914698 L5,12.0085302 C5,10.901204 5.89390193,10.0031694 7,10.0000084 L9.5,10 L15,10 L15,9 L15,7 C15,5.34314575 13.6568542,4 12,4 C10.3431458,4 9,5.34314575 9,7 L9,8 L7,8 L7,8 Z"
+								fill="#b4bbc6"></path>
+</g>
+</svg>
+					</div>
+					<div class="field">
+						<input placeholder="Mot de passe" type="password"
+							name="user[password]" id="user_password">
+					</div>
+				</div>
+				<input value="1" type="hidden" name="user[remember_me]"
+					id="user_remember_me"> <input type="submit" name="commit"
+					value="Se connecter"
+					class="button button_medium button_electrique button_block top15"
+					data-disable="true">
+			</div>
+			<div class="popin_footer full_size_links">
+				<a class="js_popup_trigger mfp-ajax" href="/users/password/new">Mot
+					de passe oublié</a> <a class="js_popup_trigger mfp-ajax"
+					href="/users/sign_up">S'inscrire</a>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
